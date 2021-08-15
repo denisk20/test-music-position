@@ -24,9 +24,9 @@ public class MyGdxGame extends ApplicationAdapter {
 		Timer.instance().scheduleTask(new Timer.Task() {
 			@Override
 			public void run() {
-				music.setPosition(134);
+				music.setPosition(134); // expect it to play for only 1 second, instead it plays almost 10.
 			}
-		}, 100).run();
+		}, 0.1f);
 	}
 
 	@Override
